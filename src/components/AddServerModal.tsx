@@ -40,7 +40,7 @@ export const AddServerModal: React.FC<AddServerModalProps> = ({
 
   if (!isOpen) return null;
 
-  const currentHost = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
+  const currentHost = typeof window !== 'undefined' ? window.location.origin : 'https://auditsentinel.akhzafachrozy.my.id';
   const installCmd = `curl -fsSL ${currentHost}/api/agent/install.sh | sudo bash`;
   const registerCmd = `sentinel register --token ${generatedToken} --server ${currentHost} --name "${serverName || 'linux-server'}"`;
 

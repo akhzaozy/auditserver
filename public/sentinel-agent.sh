@@ -36,11 +36,11 @@ mkdir -p "$STATE_DIR" "$BACKUP_DIR"
 
 load_config() {
   if [ -f "$CONFIG_FILE" ]; then
-    SERVER_URL=$(grep -o '"server": *"[^"]*"' "$CONFIG_FILE" | cut -d'"' -f4 || echo "http://localhost:3000")
+    SERVER_URL=$(grep -o '"server": *"[^"]*"' "$CONFIG_FILE" | cut -d'"' -f4 || echo "https://auditsentinel.akhzafachrozy.my.id")
     AGENT_TOKEN=$(grep -o '"token": *"[^"]*"' "$CONFIG_FILE" | cut -d'"' -f4 || echo "")
     SERVER_ID=$(grep -o '"server_id": *"[^"]*"' "$CONFIG_FILE" | cut -d'"' -f4 || echo "$(hostname)")
   else
-    SERVER_URL="${SENTINEL_SERVER:-http://localhost:3000}"
+    SERVER_URL="${SENTINEL_SERVER:-https://auditsentinel.akhzafachrozy.my.id}"
     AGENT_TOKEN="${SENTINEL_TOKEN:-sentinel_dev_token}"
     SERVER_ID="$(hostname)"
   fi
@@ -48,7 +48,7 @@ load_config() {
 
 cmd_register() {
   local token=""
-  local server="http://localhost:3000"
+  local server="https://auditsentinel.akhzafachrozy.my.id"
   local name="$(hostname)"
 
   while [[ "$#" -gt 0 ]]; do

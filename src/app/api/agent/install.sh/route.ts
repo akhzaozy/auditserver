@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET(request: Request) {
-  const host = request.headers.get('host') || 'localhost:3000';
+  const host = request.headers.get('host') || 'auditsentinel.akhzafachrozy.my.id';
   const protocol = host.includes('localhost') ? 'http' : 'https';
   const serverUrl = `${protocol}://${host}`;
 
