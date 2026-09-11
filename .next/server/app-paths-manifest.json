@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/api/agent/install.sh/route": "app/api/agent/install.sh/route.js",
+  "/api/agent/report/route": "app/api/agent/report/route.js",
+  "/api/servers/route": "app/api/servers/route.js",
+  "/api/terminal/execute/route": "app/api/terminal/execute/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
+}

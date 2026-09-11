@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/_global-error/page": "/_global-error",
+  "/api/agent/install.sh/route": "/api/agent/install.sh",
+  "/api/agent/report/route": "/api/agent/report",
+  "/api/servers/route": "/api/servers",
+  "/api/terminal/execute/route": "/api/terminal/execute",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/"
+}
